@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalonia.NETCoreMVVMApp.INotifyOnChanged", "Avalonia.NETCoreMVVMApp.INotifyOnChanged\Avalonia.NETCoreMVVMApp.INotifyOnChanged.csproj", "{CF3758D2-5B3D-4ADC-85A7-5F45BFC9CE09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF3758D2-5B3D-4ADC-85A7-5F45BFC9CE09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF3758D2-5B3D-4ADC-85A7-5F45BFC9CE09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF3758D2-5B3D-4ADC-85A7-5F45BFC9CE09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF3758D2-5B3D-4ADC-85A7-5F45BFC9CE09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
