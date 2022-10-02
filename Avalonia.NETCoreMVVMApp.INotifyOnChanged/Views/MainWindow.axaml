@@ -61,6 +61,21 @@
         <TextBox Grid.Row="2" Grid.Column="1" Margin="60,0,0,0" VerticalContentAlignment="Center"
                  Height="25" HorizontalAlignment="Stretch">
         </TextBox>
+        <Button Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" Height="30" Margin="60,20,60,0"
+                HorizontalAlignment="Center"  Width="100" Content="Spočítat" HorizontalContentAlignment="Center" Click="Button_OnClick" >
+        </Button>
+        <TextBlock Grid.Row="4" Grid.Column="0" Margin="5" Padding="15" VerticalAlignment="Stretch"
+                   HorizontalAlignment="Stretch" Text="Měsíční splátka (Kč)" >
+        </TextBlock>
+        <TextBlock Grid.Row="4" Grid.Column="1" Margin="5" Padding="15" Text="{Binding MonthlyPayment}"  VerticalAlignment="Center"
+                 Height="25" HorizontalAlignment="Stretch">
+        </TextBlock>
+        <TextBlock Grid.Row="5" Grid.Column="0" Margin="5" Padding="15" VerticalAlignment="Stretch"
+                   HorizontalAlignment="Stretch" Text="Celkem zaplatite" >
+        </TextBlock>
+        <TextBlock Grid.Row="5" Grid.Column="1" Margin="5" Padding="15" Text="{Binding TotalPayment}"  VerticalAlignment="Center"
+                   Height="25" HorizontalAlignment="Stretch" >
+        </TextBlock>
     </Grid>
 
 </Window>
