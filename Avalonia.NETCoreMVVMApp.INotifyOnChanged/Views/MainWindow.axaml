@@ -9,20 +9,8 @@
         Title="Avalonia.NETCoreMVVMApp.INotifyOnChanged">
 
     <Design.DataContext>
-        <vm:MainWindowViewModel />
+        <vm:ViewModelBase />
     </Design.DataContext>
-
-    <!-- <StackPanel> -->
-    <!--     <TextBox Watermark="Enter name" Text="{Binding Name}" Width="200" Margin="5"></TextBox> -->
-    <!--     <TextBox Watermark="Enter name" Text="{Binding Name}" Width="200" Margin="5"></TextBox> -->
-    <!--     <TextBox Watermark="Enter name" Text="{Binding Name}" Width="200" Margin="5"></TextBox> -->
-    <!--     <Button Width="150" Height="30" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5" -->
-    <!--             Content="Calculate" HorizontalContentAlignment="Center"> -->
-    <!--     </Button> -->
-    <!--     <TextBlock -->
-    <!--         Margin="5" Text="{Binding Name}" FontWeight="Bold"> -->
-    <!--     </TextBlock> -->
-    <!-- </StackPanel> -->
 
     <Grid ShowGridLines="False" HorizontalAlignment="Center">
         <Grid.RowDefinitions>
@@ -47,34 +35,37 @@
                    HorizontalAlignment="Stretch">
         </TextBlock>
         <TextBox Grid.Row="0" Grid.Column="1" Margin="60,0,0,0" VerticalContentAlignment="Center"
-                 Height="25" HorizontalAlignment="Stretch">
+                 Height="25" HorizontalAlignment="Stretch" Text="{Binding LoanAmount}">
         </TextBox>
         <TextBlock Grid.Row="1" Grid.Column="0" Text="Úroková sazba (%)" Margin="5" Padding="15"
                    HorizontalAlignment="Stretch">
         </TextBlock>
         <TextBox Grid.Row="1" Grid.Column="1" Margin="60,0,0,0" VerticalContentAlignment="Center"
-                 Height="25" HorizontalAlignment="Stretch">
+                 Height="25" HorizontalAlignment="Stretch" Text="{Binding InterestRate}">
         </TextBox>
         <TextBlock Grid.Row="2" Grid.Column="0" Text="Doba splácení v letech" Margin="5" Padding="15"
                    HorizontalAlignment="Stretch">
         </TextBlock>
         <TextBox Grid.Row="2" Grid.Column="1" Margin="60,0,0,0" VerticalContentAlignment="Center"
-                 Height="25" HorizontalAlignment="Stretch">
+                 Height="25" HorizontalAlignment="Stretch" Text="{Binding TermInYears}">
         </TextBox>
         <Button Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" Height="30" Margin="60,20,60,0"
-                HorizontalAlignment="Center"  Width="100" Content="Spočítat" HorizontalContentAlignment="Center" Click="Button_OnClick" >
+                HorizontalAlignment="Center" Width="100" Content="Spočítat" HorizontalContentAlignment="Center"
+                Click="CalculateMortgagePayments">
         </Button>
         <TextBlock Grid.Row="4" Grid.Column="0" Margin="5" Padding="15" VerticalAlignment="Stretch"
-                   HorizontalAlignment="Stretch" Text="Měsíční splátka (Kč)" >
+                   HorizontalAlignment="Stretch" Text="Měsíční splátka (Kč)">
         </TextBlock>
-        <TextBlock Grid.Row="4" Grid.Column="1" Margin="5" Padding="15" Text="{Binding MonthlyPayment}"  VerticalAlignment="Center"
-                 Height="25" HorizontalAlignment="Stretch">
+        <TextBlock Grid.Row="4" Grid.Column="1" Margin="5" Padding="15"
+                   Text="{Binding MonthlyPayment,StringFormat={}{0:0.0}}" VerticalAlignment="Center"
+                   Height="25" HorizontalAlignment="Stretch">
         </TextBlock>
         <TextBlock Grid.Row="5" Grid.Column="0" Margin="5" Padding="15" VerticalAlignment="Stretch"
-                   HorizontalAlignment="Stretch" Text="Celkem zaplatite" >
+                   HorizontalAlignment="Stretch" Text="Celkem zaplatite">
         </TextBlock>
-        <TextBlock Grid.Row="5" Grid.Column="1" Margin="5" Padding="15" Text="{Binding TotalPayment}"  VerticalAlignment="Center"
-                   Height="25" HorizontalAlignment="Stretch" >
+        <TextBlock Grid.Row="5" Grid.Column="1" Margin="5" Padding="15"
+                   Text="{Binding TotalPayment, StringFormat={}{0:0.0}}" VerticalAlignment="Center"
+                   Height="25" HorizontalAlignment="Stretch">
         </TextBlock>
     </Grid>
 

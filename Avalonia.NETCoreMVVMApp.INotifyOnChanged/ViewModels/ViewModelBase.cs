@@ -6,8 +6,29 @@ namespace Avalonia.NETCoreMVVMApp.INotifyOnChanged.ViewModels
     {
         public event PropertyChangedEventHandler? PropertyChanged;
 
-        public double MonthlyPayment { get; set; }
-        public double TotalPayment { get; set; }
+        private double _monthlyPayment;
+
+        public double MonthlyPayment
+        {
+            get => _monthlyPayment;
+            set
+            {
+                _monthlyPayment = value;
+                OnPropertyChanged(nameof(MonthlyPayment));
+            }
+        }
+
+        private double _totalPayment;
+
+        public double TotalPayment
+        {
+            get => _totalPayment;
+            set
+            {
+                _totalPayment = value;
+                OnPropertyChanged(nameof(TotalPayment));
+            }
+        }
 
         private void OnPropertyChanged(string propertyName)
         {
