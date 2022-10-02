@@ -1,0 +1,66 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Avalonia.NETCoreMVVMApp.INotifyOnChanged.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Avalonia.NETCoreMVVMApp.INotifyOnChanged.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="Avalonia.NETCoreMVVMApp.INotifyOnChanged">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel />
+    </Design.DataContext>
+
+    <!-- <StackPanel> -->
+    <!--     <TextBox Watermark="Enter name" Text="{Binding Name}" Width="200" Margin="5"></TextBox> -->
+    <!--     <TextBox Watermark="Enter name" Text="{Binding Name}" Width="200" Margin="5"></TextBox> -->
+    <!--     <TextBox Watermark="Enter name" Text="{Binding Name}" Width="200" Margin="5"></TextBox> -->
+    <!--     <Button Width="150" Height="30" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5" -->
+    <!--             Content="Calculate" HorizontalContentAlignment="Center"> -->
+    <!--     </Button> -->
+    <!--     <TextBlock -->
+    <!--         Margin="5" Text="{Binding Name}" FontWeight="Bold"> -->
+    <!--     </TextBlock> -->
+    <!-- </StackPanel> -->
+
+    <Grid ShowGridLines="False" HorizontalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Výše úvěru (Kč)" Margin="5" Padding="15"
+                   HorizontalAlignment="Stretch">
+        </TextBlock>
+        <TextBox Grid.Row="0" Grid.Column="1" Margin="60,0,0,0" VerticalContentAlignment="Center"
+                 Height="25" HorizontalAlignment="Stretch">
+        </TextBox>
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Úroková sazba (%)" Margin="5" Padding="15"
+                   HorizontalAlignment="Stretch">
+        </TextBlock>
+        <TextBox Grid.Row="1" Grid.Column="1" Margin="60,0,0,0" VerticalContentAlignment="Center"
+                 Height="25" HorizontalAlignment="Stretch">
+        </TextBox>
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Doba splácení v letech" Margin="5" Padding="15"
+                   HorizontalAlignment="Stretch">
+        </TextBlock>
+        <TextBox Grid.Row="2" Grid.Column="1" Margin="60,0,0,0" VerticalContentAlignment="Center"
+                 Height="25" HorizontalAlignment="Stretch">
+        </TextBox>
+    </Grid>
+
+</Window>
