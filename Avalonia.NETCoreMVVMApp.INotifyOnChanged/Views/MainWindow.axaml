@@ -20,7 +20,7 @@
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
-            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"></ColumnDefinition>
@@ -29,6 +29,7 @@
             <ColumnDefinition Width="Auto"></ColumnDefinition>
             <ColumnDefinition Width="Auto"></ColumnDefinition>
             <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
         <TextBlock Grid.Row="0" Grid.Column="0" Text="Výše úvěru (Kč)" Margin="5" Padding="15"
@@ -53,19 +54,19 @@
                 HorizontalAlignment="Center" Width="100" Content="Spočítat" HorizontalContentAlignment="Center"
                 Click="CalculateMortgagePayments">
         </Button>
-        <TextBlock Grid.Row="4" Grid.Column="0" Margin="5" Padding="15" VerticalAlignment="Stretch"
+        <TextBlock Grid.Row="4" Grid.Column="0" Margin="5,20,0,0" Padding="15" VerticalAlignment="Stretch"
                    HorizontalAlignment="Stretch" Text="Měsíční splátka (Kč)">
         </TextBlock>
-        <TextBlock Grid.Row="4" Grid.Column="1" Margin="5" Padding="15"
-                   Text="{Binding MonthlyPayment,StringFormat={}{0:0.0}}" VerticalAlignment="Center"
-                   Height="25" HorizontalAlignment="Stretch">
+        <TextBlock Grid.Row="4" Grid.Column="1" Margin="5,20,0,0" 
+                   Text="{Binding MonthlyPayment}" VerticalAlignment="Center"
+                   Height="25" HorizontalAlignment="Center">
         </TextBlock>
-        <TextBlock Grid.Row="5" Grid.Column="0" Margin="5" Padding="15" VerticalAlignment="Stretch"
+        <TextBlock Grid.Row="5" Grid.Column="0" Margin="5,20,0,0" Padding="15" VerticalAlignment="Stretch"
                    HorizontalAlignment="Stretch" Text="Celkem zaplatite">
         </TextBlock>
-        <TextBlock Grid.Row="5" Grid.Column="1" Margin="5" Padding="15"
-                   Text="{Binding TotalPayment, StringFormat={}{0:0.0}}" VerticalAlignment="Center"
-                   Height="25" HorizontalAlignment="Stretch">
+        <TextBlock Grid.Row="5" Grid.Column="1" Margin="5,20,0,0"
+                   Text="{Binding TotalPayment}" VerticalAlignment="Center"
+                   Height="25" HorizontalAlignment="Center">
         </TextBlock>
     </Grid>
 

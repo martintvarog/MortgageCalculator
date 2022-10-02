@@ -1,3 +1,4 @@
+using System.Globalization;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.NETCoreMVVMApp.INotifyOnChanged.Core;
@@ -16,8 +17,10 @@ namespace Avalonia.NETCoreMVVMApp.INotifyOnChanged.Views
         private void CalculateMortgagePayments(object? sender, RoutedEventArgs e)
         {
             var vm = (ViewModelBase) DataContext!;
-            vm.MonthlyPayment = CalculateMortgage.CalculateMonthlyPayment(vm.LoanAmount, vm.InterestRate, vm.TermInYears);
-            vm.TotalPayment = CalculateMortgage.CalculateOverallMortgagePayment(vm.LoanAmount, vm.InterestRate, vm.TermInYears);
+            vm.MonthlyPayment = CalculateMortgage
+                .CalculateMonthlyPayment(vm.LoanAmount, vm.InterestRate, vm.TermInYears);
+            vm.TotalPayment = CalculateMortgage
+                .CalculateOverallMortgagePayment(vm.LoanAmount, vm.InterestRate, vm.TermInYears);
         }
     }
 }
