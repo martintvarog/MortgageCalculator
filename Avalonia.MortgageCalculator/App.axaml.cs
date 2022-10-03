@@ -1,10 +1,9 @@
-using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
-using Avalonia.NETCoreMVVMApp.INotifyOnChanged.ViewModels;
-using Avalonia.NETCoreMVVMApp.INotifyOnChanged.Views;
+using Avalonia.MortgageCalculator.ViewModels;
+using MainWindow = Avalonia.MortgageCalculator.Views.MainWindow;
 
-namespace Avalonia.NETCoreMVVMApp.INotifyOnChanged
+namespace Avalonia.MortgageCalculator
 {
     public partial class App : Application
     {

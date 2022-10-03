@@ -1,9 +1,10 @@
 <Application xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="using:Avalonia.NETCoreMVVMApp.INotifyOnChanged"
-             x:Class="Avalonia.NETCoreMVVMApp.INotifyOnChanged.App">
+             xmlns:local="using:Avalonia.MortgageCalculator.INotifyOnChanged"
+             xmlns:mortgageCalculator="clr-namespace:Avalonia.MortgageCalculator"
+             x:Class="Avalonia.MortgageCalculator.App">
     <Application.DataTemplates>
-        <local:ViewLocator/>
+        <mortgageCalculator:ViewLocator/>
     </Application.DataTemplates>
 
     <Application.Styles>

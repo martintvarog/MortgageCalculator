@@ -1,10 +1,9 @@
-using System.Globalization;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
-using Avalonia.NETCoreMVVMApp.INotifyOnChanged.Core;
-using Avalonia.NETCoreMVVMApp.INotifyOnChanged.ViewModels;
+using Avalonia.MortgageCalculator.Core;
+using Avalonia.MortgageCalculator.ViewModels;
 
-namespace Avalonia.NETCoreMVVMApp.INotifyOnChanged.Views
+namespace Avalonia.MortgageCalculator.Views
 {
     public partial class MainWindow : Window
     {

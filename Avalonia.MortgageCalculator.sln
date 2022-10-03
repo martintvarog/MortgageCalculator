@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalonia.NETCoreMVVMApp.INotifyOnChanged", "Avalonia.NETCoreMVVMApp.INotifyOnChanged\Avalonia.NETCoreMVVMApp.INotifyOnChanged.csproj", "{CF3758D2-5B3D-4ADC-85A7-5F45BFC9CE09}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalonia.MortgageCalculator", "Avalonia.MortgageCalculator\Avalonia.MortgageCalculator.csproj", "{CF3758D2-5B3D-4ADC-85A7-5F45BFC9CE09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,20 +1,35 @@
 ﻿using System.ComponentModel;
 
-namespace Avalonia.NETCoreMVVMApp.INotifyOnChanged.ViewModels
+namespace Avalonia.MortgageCalculator.ViewModels
 {
     public class ViewModelBase : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler? PropertyChanged;
 
         private decimal _monthlyPayment;
-        public decimal MonthlyPayment { get => _monthlyPayment; set { _monthlyPayment = value; OnPropertyChanged(nameof(MonthlyPayment)); } }
+
+        public decimal MonthlyPayment
+        {
+            get => _monthlyPayment;
+            set
+            {
+                _monthlyPayment = value;
+                OnPropertyChanged(nameof(MonthlyPayment));
+            }
+        }
 
         private decimal _totalPayment;
-        public decimal TotalPayment { get => _totalPayment; set { _totalPayment = value; OnPropertyChanged(nameof(TotalPayment)); } }
 
-        private string _ahoj;
-        public string Ahoj { get => _ahoj; set { _ahoj = value; OnPropertyChanged(nameof(Ahoj)); } }
-        
+        public decimal TotalPayment
+        {
+            get => _totalPayment;
+            set
+            {
+                _totalPayment = value;
+                OnPropertyChanged(nameof(TotalPayment));
+            }
+        }
+
 
         private void OnPropertyChanged(string propertyName)
         {

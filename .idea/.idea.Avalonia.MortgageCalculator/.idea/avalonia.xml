@@ -3,6 +3,7 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="Avalonia.MortgageCalculator/Views/MainWindow.axaml" value="Avalonia.MortgageCalculator/Avalonia.MortgageCalculator.csproj" />
         <entry key="Avalonia.NETCoreMVVMApp.INotifyOnChanged/App.axaml" value="Avalonia.NETCoreMVVMApp.INotifyOnChanged/Avalonia.NETCoreMVVMApp.INotifyOnChanged.csproj" />
         <entry key="Avalonia.NETCoreMVVMApp.INotifyOnChanged/Views/MainWindow.axaml" value="Avalonia.NETCoreMVVMApp.INotifyOnChanged/Avalonia.NETCoreMVVMApp.INotifyOnChanged.csproj" />
       </map>

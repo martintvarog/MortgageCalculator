@@ -1,8 +1,7 @@
-﻿using Avalonia;
+﻿using System;
 using Avalonia.ReactiveUI;
-using System;
 
-namespace Avalonia.NETCoreMVVMApp.INotifyOnChanged
+namespace Avalonia.MortgageCalculator
 {
     class Program
     {

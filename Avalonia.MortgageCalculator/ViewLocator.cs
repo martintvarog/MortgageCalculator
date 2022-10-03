@@ -1,9 +1,9 @@
 using System;
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
-using Avalonia.NETCoreMVVMApp.INotifyOnChanged.ViewModels;
+using Avalonia.MortgageCalculator.ViewModels;
 
-namespace Avalonia.NETCoreMVVMApp.INotifyOnChanged
+namespace Avalonia.MortgageCalculator
 {
     public class ViewLocator : IDataTemplate
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Avalonia.NETCoreMVVMApp.INotifyOnChanged.Core;
+namespace Avalonia.MortgageCalculator.Core;
 
 internal static class CalculateMortgage
 {
