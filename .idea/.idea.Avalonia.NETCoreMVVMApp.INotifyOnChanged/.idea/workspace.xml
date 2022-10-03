@@ -4,13 +4,18 @@
     <projectFile>Avalonia.NETCoreMVVMApp.INotifyOnChanged/Avalonia.NETCoreMVVMApp.INotifyOnChanged.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="241e80ea-398c-4649-a098-a719ccf9f430" name="Changes" comment="" />
+    <list default="true" id="241e80ea-398c-4649-a098-a719ccf9f430" name="Changes" comment="adjust namespace">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Avalonia.NETCoreMVVMApp.INotifyOnChanged/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Avalonia.NETCoreMVVMApp.INotifyOnChanged/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Avalonia.MortgageCalculator/Core/CalculateMortgage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Avalonia.MortgageCalculator/ViewLocator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Avalonia.MortgageCalculator/Views/MainWindow.axaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/ce91e25492da467c857f17ceb6b5288916280/_2bbc8/PropertyChangedEventHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/ce91e25492da467c857f17ceb6b5288916280/_d965b/INotifyPropertyChanged.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -68,7 +73,16 @@
       <workItem from="1664727425060" duration="11420000" />
       <workItem from="1664743336474" duration="202000" />
       <workItem from="1664743554663" duration="75000" />
+      <workItem from="1664811749950" duration="652000" />
     </task>
+    <task id="LOCAL-00001" summary="adjust namespace">
+      <created>1664812031064</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664812031064</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,5 +103,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="adjust namespace" />
+    <option name="LAST_COMMIT_MESSAGE" value="adjust namespace" />
   </component>
 </project>
