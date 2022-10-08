@@ -4,7 +4,7 @@
     <projectFile>Avalonia.NETCoreMVVMApp.INotifyOnChanged/Avalonia.NETCoreMVVMApp.INotifyOnChanged.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="241e80ea-398c-4649-a098-a719ccf9f430" name="Changes" comment="adjust namespace">
+    <list default="true" id="241e80ea-398c-4649-a098-a719ccf9f430" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Avalonia.NETCoreMVVMApp.INotifyOnChanged/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Avalonia.NETCoreMVVMApp.INotifyOnChanged/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +73,7 @@
       <workItem from="1664727425060" duration="11420000" />
       <workItem from="1664743336474" duration="202000" />
       <workItem from="1664743554663" duration="75000" />
-      <workItem from="1664811749950" duration="652000" />
+      <workItem from="1664811749950" duration="2015000" />
     </task>
     <task id="LOCAL-00001" summary="adjust namespace">
       <created>1664812031064</created>
